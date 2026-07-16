@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>expense-tracker</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Expense Tracker</a>
+        <ul>
+          <li><a href="#">Add Expense</a></li>
+          <li><a href="#">History</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form class="myForm">
+        <div class="amount">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" />
+        </div>
+
+        <div class="categorySelection">
+          <label for="category">Select Category</label>
+          <select name="category" id="category">
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Shopping">Shopping</option>
+          </select>
+        </div>
+
+        <div class="desc">
+          <label for="description">Description</label>
+          <input type="text" id="description" placeholder="optional" />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Food</td>
+            <td>Lunch at Cafe</td>
+            <td>42</td>
+            <td>
+              <button class="delbtn">delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
